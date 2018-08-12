@@ -66,6 +66,46 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Five Week in BeiJing" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/12/Five Week in BeiJing/" class="article-date">
+  <time datetime="2018-08-12T12:13:13.516Z" itemprop="datePublished">2018-08-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/12/Five Week in BeiJing/">第六章 北京的第五周</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>　　第五周。这周五发了第一个月的工资，让我紧迫的日子稍微缓解了一下，可是还了信用卡、学习贷款、房租后这个月又只剩千把块钱，一下子又回到了赤贫。现在我有点体会到了有房贷有家庭压力而被工作牢牢套牢的感觉了。不过这也让我反思合理消费论的可行性，仔细想来很多东西都是自己的欲望和虚荣心在作祟，少了这些东西并不影响自己的生活质量。有时，某些东西多了，不单是购物，反而会分散你的意志，无法从一而终履行自己的规划，譬如书籍，买的很多，但真正按部就班读下来的又有几本呢。自制，自律是一个成熟的表现，而我有时会被某些规划无关的东西吸引了过去，无法专注一条路，而这个路是我早先规划好的，我认为这是我内在的一大致命伤，无形中把我拉离了航道，离目标越来越远。与自己斗争是一个永恒的难题，但没想到是如此的艰难。我要时刻警惕自己，成为战胜自己的强者。</p>
+<p>　　这周工作，其实做的事还是挺多了，一个是独立负责了一个海鼎erp的case–莆田易太，和上周一样，少了找表的过程，减少了很多时间。但这周这家客户不允许我们白天访问他们的数据库，我们无法抓数，只能晚上抓数，这个很影响了我们的交付进度。还有一个影响就是我们自己的redshift入库压力巨大，早上基本无法再增加新的入库任务了，只能挪到下午，这个也影响了我这个case的交付。总体下来，也还是赶在周五下午5点钟之前交付了。但离一周至少交付2家的目标还有很多差距，虽然有很多外部因素的影响，但真要我交付出两家，时间真得好好规划，完美调度，至少每家的准备工作时间要缩短。做数据的一个必备技能就是多任务处理，跑数耗时间就让他跑着，时间用来干别的事，当易太的数入库时或早上不让入库时，我就处理其余的两个大的任务。一个是为所有客户的chain_goods表增加额外的字段，另一个是完成思迅erp其他业务表仿照天天。特别是第二个任务涉及到找表，特费时间，好在这两个任务都不急，容我慢慢推进。这周chain_goods表完成了海鼎，思迅的配置，其他erp到下周找出来配置。思迅的其他业务表暂时确定了大仓采购，大仓配送，门店直配的入库逻辑。本周的工作内容大致是怎么多。</p>
+<p>　　当然，这周也爆发了很多问题，有历史问题，也有以前的小问题到这周表现特别严重。找到源表一如既往的耗费时间，我在不断探索好的找表方法。其次，就是任务的调度不顺畅，浪费了很多零碎时间，我想这个可以每天做个任务计划表来解决衔接的问题。最后，就是我上文提到的入库效率问题，这周特别明显，似乎是数据堵住了一样，丝毫没有流动的感觉，原因我不知道，我想数据组其他人也没想出到底那出大问题了，否则他们就着手解决了。现在他们更多希望寄托的是ETL3.0能完美解决，不再排队堵住，不再有建临时表，插入数据到临时表，再copy数据到目标表这些繁琐流程。希望他们能加快进度，能提前完成，解放我们，这一个月给我的感觉就是大家的紧迫感或者说解决问题感不强，项目日程下来了讨论的多，没有总结问题的习惯，他们用代码解决实际的问题的能力还有待加强，离敏捷开发还远。</p>
+<p>　　本周部门的会议也是围绕着ETL3.0，实质性进展是这周拿出了一个ETL数据源配置的web应用交付我们测试，然后谈了后续入库功能模块的规划，分工到了人，强调时间截点。这两周紧急的就是抓数这块功能的实现，交付我们测试时，功能其实已经差不多了，我们ETL测试后也提了几点的需求，大多集中在便捷性上。这周技术大佬们依旧很忙，参加会议的，商务谈判的。其次，8月9日是李健豪的生日，这天他参加了AWS的峰会，8月10号，公司给他补办了一个生日，两个蛋糕，一根蜡烛，全员分享了这次欢乐，只是和我理想中的气氛相当违背，让我不禁想起来美剧《硅谷》里互联网人开Party中诡异气氛场景。说起这次补办，这就是大佬和一般打工仔的区别，一般员工就是一个小红包慰劳，在这里你有多大的附加值公司就能给你多高的尊重，所以努力成为那样的人，而不要成为无足轻重的民工，李健豪如此，史蒂夫乔布斯也是如此。本周开发人员口中冒出的最多的词就是Docker了，虚拟机技术，这也跟他们当下需要部署环境的需求有关，也是考验他们学习能力，解决问题能力的时候了，公司的优势在这里就体现出来了，这里有完备硬件和软件环境足够你把Docker从头搭建起来，还能运行实际的业务。这跟你在学校倒弄虚拟机，敲敲代码测试Demo有着天壤之别，背后就是实践出真知的哲理。我想这也是为什么越来越多的企业强调工作经验了，只有在实际环境中你才能碰到你之前不可能碰到的问题，从而增长你的核心竞争力。带着解决实际问题的目的去学习才是最好的学习方式。说了这么多，就先到这吧，我也要去解决实际问题了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/12/Five Week in BeiJing/" data-id="cjkqwsvbq0000h8r8vlb5dzy8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Four Week in BeiJing" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/08/05/Four Week in BeiJing/" class="article-date">
@@ -95,7 +135,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/08/05/Four Week in BeiJing/" data-id="cjkh06w7w0000tsr8xqrunmm7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/05/Four Week in BeiJing/" data-id="cjkqwsvc20001h8r8bb40r857" class="article-share-link">Share</a>
       
       
     </footer>
@@ -135,7 +175,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/29/Third Week in BeiJing/" data-id="cjkh06w9a0002tsr81wr0i6an" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/29/Third Week in BeiJing/" data-id="cjkqwsvcj0002h8r8exfj7exn" class="article-share-link">Share</a>
       
       
     </footer>
@@ -176,7 +216,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/23/Second Week in BeiJing/" data-id="cjkh06w9p0006tsr8nzvuxonc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/23/Second Week in BeiJing/" data-id="cjkqwsvco0004h8r8fva64xa0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -218,7 +258,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/14/Chapter 2 First week in BeiJing/" data-id="cjkh06w9f0003tsr8xzcqwm0p" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/14/Chapter 2 First week in BeiJing/" data-id="cjkqwsvcv0006h8r8fzfwzv9l" class="article-share-link">Share</a>
       
       
     </footer>
@@ -261,7 +301,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/07/Start in BeiJing/" data-id="cjkh06w9n0005tsr88mw9a1m2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/07/Start in BeiJing/" data-id="cjkqwsvcm0003h8r8l93nwuux" class="article-share-link">Share</a>
       
       
     </footer>
@@ -301,7 +341,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/05/blog-built/" data-id="cjkh06w950001tsr8kbk2jqd1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/05/blog-built/" data-id="cjkqwsvcs0005h8r86a9ydmi0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -346,7 +386,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/05/hello-world/" data-id="cjkh06w9i0004tsr8mger9g0q" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/05/hello-world/" data-id="cjkqwsvdn0007h8r8s09n0i4e" class="article-share-link">Share</a>
       
       
     </footer>
@@ -387,6 +427,10 @@
       <ul>
         
           <li>
+            <a href="/2018/08/12/Five Week in BeiJing/">第六章 北京的第五周</a>
+          </li>
+        
+          <li>
             <a href="/2018/08/05/Four Week in BeiJing/">第五章 北京的第四周</a>
           </li>
         
@@ -400,10 +444,6 @@
         
           <li>
             <a href="/2018/07/14/Chapter 2 First week in BeiJing/">第二章 北京的第一周</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/07/Start in BeiJing/">第一章 北京的开始</a>
           </li>
         
       </ul>
