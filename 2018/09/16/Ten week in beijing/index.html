@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>第七章 北京的第九周 | XiaoZhu 的数字世界</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="北京的第十周，数据组的etl3.0项目已接近尾声，剩下的一些小BUG隐藏的比较深，需要产品一边运用一边发现，一边解决。这周的前四天我的工作基本还是围绕etl3.0，帮助开发同事测试数据问题，这个问题对于自身，还是老问题，机械化程度比较高，而且比较耗时间，但是数据组没有人手腾出。还好这些问题都是暂时的。可是即使这些都不暂时的，我依然想出了一套代码化的方案，解决机械化劳动的问题。这周还没有碰到需要">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第七章 北京的第九周">
+<meta property="og:url" content="http://yoursite.com/2018/09/16/Ten week in beijing/index.html">
+<meta property="og:site_name" content="XiaoZhu 的数字世界">
+<meta property="og:description" content="北京的第十周，数据组的etl3.0项目已接近尾声，剩下的一些小BUG隐藏的比较深，需要产品一边运用一边发现，一边解决。这周的前四天我的工作基本还是围绕etl3.0，帮助开发同事测试数据问题，这个问题对于自身，还是老问题，机械化程度比较高，而且比较耗时间，但是数据组没有人手腾出。还好这些问题都是暂时的。可是即使这些都不暂时的，我依然想出了一套代码化的方案，解决机械化劳动的问题。这周还没有碰到需要">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-09-16T14:24:34.225Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="第七章 北京的第九周">
+<meta name="twitter:description" content="北京的第十周，数据组的etl3.0项目已接近尾声，剩下的一些小BUG隐藏的比较深，需要产品一边运用一边发现，一边解决。这周的前四天我的工作基本还是围绕etl3.0，帮助开发同事测试数据问题，这个问题对于自身，还是老问题，机械化程度比较高，而且比较耗时间，但是数据组没有人手腾出。还好这些问题都是暂时的。可是即使这些都不暂时的，我依然想出了一套代码化的方案，解决机械化劳动的问题。这周还没有碰到需要">
+  
+    <link rel="alternate" href="/atom.xml" title="XiaoZhu 的数字世界" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">XiaoZhu 的数字世界</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Stay hungry Stay foolish</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Ten week in beijing" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/16/Ten week in beijing/" class="article-date">
+  <time datetime="2018-09-16T14:21:35.134Z" itemprop="datePublished">2018-09-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      第七章 北京的第九周
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>　　北京的第十周，数据组的etl3.0项目已接近尾声，剩下的一些小BUG隐藏的比较深，需要产品一边运用一边发现，一边解决。这周的前四天我的工作基本还是围绕etl3.0，帮助开发同事测试数据问题，这个问题对于自身，还是老问题，机械化程度比较高，而且比较耗时间，但是数据组没有人手腾出。还好这些问题都是暂时的。可是即使这些都不暂时的，我依然想出了一套代码化的方案，解决机械化劳动的问题。这周还没有碰到需要新思路的问题，值得注意的是一两个隐蔽性比较高的问题，一个是原始数据的空格问题，这个问题是数据表中某个字段有空格导致产品组数据匹配不到。一个是开发人员使用python解析sql union问题，导致表中元组长度不足丢失商品category 2,3级分类。</p>
+<p>　　这周之所以工作了4天是因为公司有大型团建–库布齐沙漠徒步竞赛。这场精心筹备了一个月之久的沙漠旅行基本上公司全员参与了。作为一年一度（未来可能），今年是首届的大型团建选择了沙漠对应的公司文化和leader的价值观来说是一个很好的体现，作为一个创业型年轻团队，我们不需要舒适，奢华，面子工程，我们需要的是不断赶超的竞争力和狼性，正如leader所说，这个方向，我们不努力做，总有人会努力做，而且总有一些人会到达互联网零售的终点，希望是我们站到巅峰。而沙漠竞走体现了这一理念，未走之前的担心和担忧，压力和回顾之后的窥见自我感觉是完全不一样，虽然有小小的压力，痛苦，但精神上的收获也是值得的。我想创业也是这样吧，大多数人掉在了途中或干脆放弃了，他们体会到了痛苦，压力，但是坚持到达终点的团队才能享受到物质、高精神上的馈赠。不知道上帝为什么要这么设定，也行这种馈赠太过宝贵了吧或只是人性上的马拉松式的考验。只希望有生之年能享受到那种创业成功的高级快乐，也许是一种奢望吧，但人生是无常的，有希望总是好的。全程20公里的沙漠徒步虽说对体力没有太大要求，但是考虑到我们周五、周六两天天气舒适，也算是一种减轻。全公司周五中午12:00到达库布齐沙漠出发点，用了一个小时穿戴装备，分小队，举办出发仪式。我被分到第二小队，队名叫Day one–每天都是新的一天。CTO跟我们一队，是灵魂支柱，全程给我们加油打气，鼓励队伍前进。整个公司的团队除了体态原因体力不支的两三个情况出现，全员完成了冲线任务，年轻的力量就是强大。最后，我要说的是虽然全程有着各种各样的小问题，但都忍受下来了，坚持到了最后。我想，在生活中，需要把这种坚持的力量运用到各个方面，譬如抵制诱惑，读书，运动，精神上的不舒适。不断突破自己的极限。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/16/Ten week in beijing/" data-id="cjm4ye1qh0004xgr8jvhkh83u" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/09/09/Nine week in beijing/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">第七章 北京的第九周</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/09/16/Ten week in beijing/">第七章 北京的第九周</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/09/Nine week in beijing/">第七章 北京的第九周</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/01/Eight Week in Beijing/">第六章 北京的第八周</a>
+          </li>
+        
+          <li>
+            <a href="/2018/08/12/Five Week in BeiJing/">第六章 北京的第五周</a>
+          </li>
+        
+          <li>
+            <a href="/2018/08/05/Four Week in BeiJing/">第五章 北京的第四周</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 XiaoZhu<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
